@@ -26,7 +26,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 // Images
 import asuLogo from '../assets/ASU_CIC_LOGO_WHITE.png';
-import gradientImg from '../assets/Gradient.svg';
+import gradientImg from '../assets/Gradient-blue.svg';
 import awsLogo from '../assets/POWERED_BY_AWS.png';
 import bottomGradient from '../assets/bottom_gradient.svg';
 
@@ -34,21 +34,16 @@ import bottomGradient from '../assets/bottom_gradient.svg';
 import { styled } from '@mui/system';
 
 const StyledLink = styled(Link)(({ theme }) => ({
-  color: '#8C1D40',
-  textDecoration: 'underline',
-  component: 'a',
+  color: '#000E54',        //  Navy
   '&:hover': {
-    color: '#70122F',
+    color: '#F76900',       //  Orange on hover (nice contrast)
   },
 }));
 
 const StyledEmailLink = styled(Link)(({ theme }) => ({
-  color: '#8C1D40',
-  textDecoration: 'none',
-  component: 'a',
+  color: '#000E54',        // Navy
   '&:hover': {
-    color: '#70122F',
-    textDecoration: 'underline',
+    color: '#F76900',       // Orange on hover
   },
 }));
 
@@ -128,7 +123,7 @@ const LandingPage = () => {
       {/* Top Black Bar */}
       <Box
         sx={{
-          backgroundColor: '#000',
+          backgroundColor: '#000E54',
           height: '36px',
           width: '100%',
           display: 'flex',
@@ -157,7 +152,7 @@ const LandingPage = () => {
         sx={{
           display: 'flex',
           flexDirection: 'row',
-          backgroundColor: '#000',
+          backgroundColor: '#000e54',
           color: '#fff',
           minHeight: '65vh',
           alignItems: 'center',
@@ -186,22 +181,19 @@ const LandingPage = () => {
             About this solution:
           </Typography>
           <Typography variant="body1" component="h3" paragraph>
-            This solution was created by the Arizona State University Artificial
-            Intelligence Cloud Innovation Center (AI CIC), powered by Amazon Web
-            Services (AWS), to tackle a significant challenge in the digital era:
-            improving the accessibility of digital document collections.
-          </Typography>
-          <Typography variant="body1" component="h3" paragraph>
-            With the Department of Justice’s April 2024 updates to how the
-            Americans with Disabilities Act (ADA) will be regulated, the AI CIC
-            developed a scalable open‐source solution that quickly and
-            efficiently brings PDF documents into compliance with WCAG 2.1 Level
-            AA standards. For bulk processing, 10 pages would cost approximately
-            $0.013 for AWS service costs + Adobe API costs.
-          </Typography>
+  This solution was deployed by Syracuse University, powered by Amazon Web Services
+  (AWS), to tackle a significant challenge in the digital era: improving
+  the accessibility of digital document collections.
+</Typography>
+<Typography variant="body1" component="h3" paragraph>
+  With the Department of Justice's April 2024 updates to how the
+  Americans with Disabilities Act (ADA) will be regulated, Syracuse University has
+  deployed this open-source solution to quickly and efficiently bring
+  PDF documents into compliance with WCAG 2.1 Level AA standards.
+</Typography>
           <Typography variant="body1" component="h3" paragraph>
             To test out this open‐source solution,{' '}
-            <Box component="span" sx={{ color: '#FFC627', fontWeight: 'bold' }}>
+            <Box component="span" sx={{ color: '#F76900', fontWeight: 'bold' }}>
               click "Log In and Remediate My PDF"
             </Box>{' '}
             to briefly create an account, upload your document, and receive your
@@ -220,11 +212,9 @@ const LandingPage = () => {
               Provided by:
             </Typography>
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <img
-                src={asuLogo}
-                alt="ASU AI CIC Logo (white)"
-                style={{ height: 70, width: 'auto', marginRight: '16px' }}
-              />
+ <Typography variant="h6" sx={{ color: 'white', fontWeight: 'bold', mr: 2 }}>
+Syracuse University
+   </Typography>
               <img
                 src={awsLogo}
                 alt="Powered by AWS logo (white)"
@@ -253,7 +243,7 @@ const LandingPage = () => {
               component="h2"
               sx={{
                 mb: 4,
-                color: '#FFC627',
+                color: '#F76900',
                 textAlign: 'center',
                 fontWeight: 'bold',
               }}
@@ -274,7 +264,7 @@ const LandingPage = () => {
                 />
               }
               sx={{
-                backgroundColor: '#FFC627',
+                backgroundColor: '#F76900',
                 color: '#000',
                 fontWeight: 'bold',
                 fontSize: '1.2rem',
@@ -287,12 +277,11 @@ const LandingPage = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                '&:hover': {
-                  backgroundColor: '#e6ae22',
-                  transform: 'scale(1.05)',
-                },
+'&:hover': {
+  backgroundColor: '#C75500',  // Darker orange for hover
+},
                 '&.MuiLoadingButton-loading': {
-                  backgroundColor: '#FFC627',
+                  backgroundColor: '#F76900',
                 },
               }}
             >
@@ -308,7 +297,7 @@ const LandingPage = () => {
                 e.preventDefault();
                 handleOpenDialog();
               }}
-              sx={{ fontSize: '0.9rem', color: '#FFC627' }}
+              sx={{ fontSize: '0.9rem', color: '#F76900' }}
             >
               Learn more about the remediation process
             </StyledLink>
@@ -320,7 +309,7 @@ const LandingPage = () => {
       <Box
         sx={{
           height: '5px',
-          backgroundColor: '#FFC627',
+          backgroundColor: '#F76900',
         }}
       />
 
@@ -340,17 +329,11 @@ const LandingPage = () => {
             <ListItemIcon sx={{ minWidth: '24px' }}>
               <SmallFiberManualRecordIcon size="12px" sx={{ color: '#000000' }} />
             </ListItemIcon>
-            <Typography variant="body1" component="h3">
-            Want a personalized demo of this solution? Have questions about your customer setup?{' '}
-              <StyledLink
-                href="https://aws.amazon.com/government-education/contact/"
-                target="_blank"
-                rel="noopener"
-                sx={{ ml: 0.5 }}
-              >
-                Contact AWS
-              </StyledLink>
-            </Typography>
+<Typography variant="body1" component="h3" paragraph>
+  This solution was deployed by Syracuse University, powered by Amazon Web Services
+  (AWS), to improve the accessibility of digital document collections in
+  compliance with WCAG 2.1 Level AA standards.
+</Typography>
           </ListItem>
           <ListItem disablePadding sx={{ mb: 1 }}>
             <ListItemIcon sx={{ minWidth: '24px' }}>
@@ -398,65 +381,45 @@ const LandingPage = () => {
           </ListItem>
         </List>
       </Box>
-
-      {/* About the AI CIC Section */}
-      <Box
-        sx={{
-          p: 4,
-          backgroundColor: '#FAFAFA',
-          position: 'relative',
-          overflow: 'hidden',
-        }}
-      >
-        <Box
-          sx={{
-            position: 'absolute',
-            top: '-20%',
-            left: '-10%',
-            width: '120%',
-            height: '150%',
-            backgroundImage: `url(${bottomGradient})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            transform: 'rotate(-15deg)',
-            opacity: 0.2,
-            zIndex: -1,
-          }}
-        />
-        <Typography variant="h5" component="h2" sx={{ mb: 2 }}>
-          About the AI CIC:
-        </Typography>
-        <Typography variant="body1" component="h3" paragraph>
-          The ASU Artificial Intelligence Cloud Innovation Center (AI CIC),
-          powered by AWS, is a no‐cost design thinking and rapid prototyping
-          shop dedicated to bridging the digital divide and driving innovation
-          in the nonprofit, healthcare, education, and government sectors.
-        </Typography>
-        <Typography variant="body1" component="h3" paragraph>
-          Our expert team harnesses Amazon’s pioneering approach to dive deep
-          into high-priority pain points, meticulously define challenges, and
-          craft strategic solutions. We collaborate with AWS solutions
-          architects and talented student workers to develop tailored
-          prototypes showcasing how advanced technology can tackle a wide
-          range of operational and mission-related challenges.
-        </Typography>
-        <Typography variant="body1" component="h3" paragraph>
-          Discover how we use technology to drive innovation. Visit our
-          website at{' '}
-          <StyledLink
-            href="https://smartchallenges.asu.edu/challenges/pdf-accessibility-ohio-state-university"
-            target="_blank"
-            rel="noopener"
-          >
-            AI CIC
-          </StyledLink>{' '}
-          or contact us directly at{' '}
-          <StyledEmailLink href="mailto:ai-cic@amazon.com">
-            ai-cic@amazon.com
-          </StyledEmailLink>
-          .
-        </Typography>
-      </Box>
+{/* About Syracuse Section */}
+<Box
+  sx={{
+    p: 4,
+    backgroundColor: '#FAFAFA',
+    position: 'relative',
+    overflow: 'hidden',
+  }}
+>
+  <Box
+    sx={{
+      position: 'absolute',
+      top: '-20%',
+      left: '-10%',
+      width: '120%',
+      height: '150%',
+      backgroundImage: `url(${bottomGradient})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      transform: 'rotate(-15deg)',
+      opacity: 0.2,
+      zIndex: -1,
+    }}
+  />
+  <Typography variant="h5" component="h2" sx={{ mb: 2 }}>
+    About Syracuse:
+  </Typography>
+  <Typography variant="body1" component="h3" paragraph>
+    Syracuse University is committed to ensuring that our digital resources are accessible to 
+    everyone. This tool helps faculty, staff, and students bring their PDF 
+    documents into compliance with accessibility standards.
+  </Typography>
+  <Typography variant="body1" component="h3" paragraph>
+    For technical support or questions about deployment, contact the Information Technologies Services team at{' '}
+    <StyledEmailLink href="mailto:help@syr.edu">
+      help@syr.edu
+    </StyledEmailLink>.
+  </Typography>
+</Box>
 
       {/* 
         Dialog (modal) for remediation process
