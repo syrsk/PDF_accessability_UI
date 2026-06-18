@@ -1,9 +1,9 @@
 // Colors for your theme
-export const PRIMARY_MAIN = '#000E54';  // Your primary color (blue)
-export const SECONDARY_MAIN = '#f76900';  // Your secondary color (pink)
+export const PRIMARY_MAIN = '#F76900';  // Your primary color (blue)
+export const SECONDARY_MAIN = '#000E54';  // Your secondary color (pink)
 export const CHAT_LEFT_PANEL_BACKGROUND = '#000e54';  // Background color for left panel
-export const HEADER_BACKGROUND = '#F4F6F8';  // Background color for header
-export const primary_50 = '#e6e8ef';  // Lighter shade of primary color
+export const HEADER_BACKGROUND = '#F5F5F7';  // Background color for header
+export const primary_50 = '#FFF1E5';  // Lighter shade of primary color
 
 export const isMaintenanceMode = process.env.REACT_APP_MAINTENANCE_MODE === 'true';
 
