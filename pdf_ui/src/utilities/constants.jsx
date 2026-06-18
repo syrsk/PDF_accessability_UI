@@ -3,7 +3,7 @@ export const PRIMARY_MAIN = '#F76900';  // Your primary color (blue)
 export const SECONDARY_MAIN = '#000E54';  // Your secondary color (pink)
 export const CHAT_LEFT_PANEL_BACKGROUND = '#000e54';  // Background color for left panel
 export const HEADER_BACKGROUND = '#F5F5F7';  // Background color for header
-export const primary_50 = '#FFF1E5';  // Lighter shade of primary color
+export const primary_50 = '#FFF1E5';  // Lighter shade of primary colo
 
 export const isMaintenanceMode = process.env.REACT_APP_MAINTENANCE_MODE === 'true';
 
