@@ -72,7 +72,7 @@ function FormatSelection({ selectedFormat, onFormatChange }) {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#8C1D40',
+                  color: '#F76900',
                   fontSize: { xs: '20px', sm: '24px' },
                 }}
               >
@@ -126,7 +126,7 @@ function FormatSelection({ selectedFormat, onFormatChange }) {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#8C1D40',
+                  color: '#F76900',
                   fontSize: { xs: '20px', sm: '24px' },
                 }}
               >

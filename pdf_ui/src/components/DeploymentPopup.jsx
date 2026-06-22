@@ -101,8 +101,8 @@ const DeploymentPopup = ({ open, onClose, validation }) => {
                 startIcon={<BuildIcon />}
                 onClick={handleVisitRepo}
                 sx={{
-                  backgroundColor: '#8c1d40',
-                  '&:hover': { backgroundColor: '#732a3a' }
+                  backgroundColor: '#F76900',
+                  '&:hover': { backgroundColor: '#C24F00' }
                 }}
               >
                 Deploy from GitHub
@@ -155,8 +155,8 @@ const DeploymentPopup = ({ open, onClose, validation }) => {
           onClick={handleVisitRepo}
           variant="contained"
           sx={{
-            backgroundColor: '#8c1d40',
-            '&:hover': { backgroundColor: '#732a3a' }
+            backgroundColor: '#F76900',
+            '&:hover': { backgroundColor: '#C24F00' }
           }}
         >
           Go to Deployment Guide

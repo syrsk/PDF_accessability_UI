@@ -47,7 +47,7 @@ const InformationBlurb = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            borderTop: '2px solid #8c1d40',
+            borderTop: '2px solid #F76900',
             position: 'relative',
             minHeight: { xs: '100px', sm: '140px' },
             margin: { xs: '0 auto', sm: '0' }
