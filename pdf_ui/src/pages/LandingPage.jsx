@@ -181,15 +181,13 @@ const LandingPage = () => {
             About this solution:
           </Typography>
           <Typography variant="body1" component="h3" paragraph>
-  This solution was deployed by Syracuse University, powered by Amazon Web Services
-  (AWS), to tackle a significant challenge in the digital era: improving
-  the accessibility of digital document collections.
+This tool uses AI to help bring Syracuse University PDF documents into conformance with WCAG 2.1 Level AA. It was developed through a collaboration between the Arizona State University Artificial Intelligence Cloud Innovation Center (AI CIC), Amazon Web Services (AWS), and Adobe. 
 </Typography>
 <Typography variant="body1" component="h3" paragraph>
-  With the Department of Justice's April 2024 updates to how the
-  Americans with Disabilities Act (ADA) will be regulated, Syracuse University has
-  deployed this open-source solution to quickly and efficiently bring
-  PDF documents into compliance with WCAG 2.1 Level AA standards.
+  Recent updates to Section 504 of the Rehabilitation Act and Title II of the Americans with Disabilities Act (ADA) have strengthened the expectation that digital content, including PDF documents, is accessible to people with disabilities. This tool helps the University meet that responsibility by improving the accessibility of existing documents at scale.
+</Typography>
+<Typography variant="body1" component="h3" paragraph>
+  Access is currently limited due to the per-page cost of using the tool. The University is introducing it first in the areas with the highest volume of at-risk documents. Availability will expand over time to units that wish to take part in a cost-sharing model. Contact the ITS-Digital Accessibility Services (ITS-DAS) team with questions. To get started, select the button to “Log In and Remediate My PDF.” You will be prompted to create an account if it is your first time logging in. 
 </Typography>
           <Typography variant="body1" component="h3" paragraph>
             To test out this open‐source solution,{' '}
@@ -302,6 +300,9 @@ Syracuse University
               Learn more about the remediation process
             </StyledLink>
           </Box>
+          <Box>
+            (This video was produced by the Arizona State University AI CIC. Not all details reflect Syracuse University's setup. An SU-specific video will follow at a later point.)
+          </Box>
         </Box>
       </Box>
 
@@ -330,9 +331,13 @@ Syracuse University
               <SmallFiberManualRecordIcon size="12px" sx={{ color: '#000000' }} />
             </ListItemIcon>
 <Typography variant="body1" component="h3" paragraph>
-  This solution was deployed by Syracuse University, powered by Amazon Web Services
-  (AWS), to improve the accessibility of digital document collections in
-  compliance with WCAG 2.1 Level AA standards.
+  Questions or support: Contact ITS-DAS at 
+  <StyledEmailLink href="mailto:accessibleIT@syr.edu">
+    accessibleIT@syr.edu
+  </StyledEmailLink> or drop in to 
+  <StyledEmailLink href="mailto:https://itsaccessibility.syr.edu/help/">
+      Digital Accessibility Office Hours
+    </StyledEmailLink>.
 </Typography>
           </ListItem>
           <ListItem disablePadding sx={{ mb: 1 }}>
@@ -409,15 +414,16 @@ Syracuse University
     About Syracuse:
   </Typography>
   <Typography variant="body1" component="h3" paragraph>
-    Syracuse University is committed to ensuring that our digital resources are accessible to 
-    everyone. This tool helps faculty, staff, and students bring their PDF 
-    documents into compliance with accessibility standards.
+    Syracuse University is committed to advancing equal access to its digital resources and services. This tool supports that commitment by helping the University bring PDF documents into conformance with recognized accessibility standards. For questions about digital accessibility, contact ITS-DAS at 
+    <StyledEmailLink href="mailto:accessibleIT@syr.edu">
+      accessibleIT@syr.edu
+    </StyledEmailLink>.
   </Typography>
   <Typography variant="body1" component="h3" paragraph>
     For technical support or questions about deployment, contact the Information Technologies Services team at{' '}
-    <StyledEmailLink href="mailto:help@syr.edu">
-      help@syr.edu
-    </StyledEmailLink>.
+    <StyledEmailLink href="mailto:its-das@syr.edu">
+      its-das@syr.edu
+    </StyledEmailLink>
   </Typography>
 </Box>
 
