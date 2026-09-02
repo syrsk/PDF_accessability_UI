@@ -484,7 +484,7 @@ function UploadSection({ onUploadComplete, awsCredentials, currentUsage, maxFile
               </p>
             </div>
 
-         /* Removed self-contained PDF-HTML option for brevity, but it would be similar to the PDF option above, with appropriate changes for HTML format. */
+        
           </div>
         </div>
       </div>
