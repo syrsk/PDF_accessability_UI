@@ -44,7 +44,7 @@ function FormatSelection({ selectedFormat, onFormatChange }) {
         Choose Output Format
       </Typography>
       <Grid container spacing={{ xs: 2, sm: 3 }} justifyContent="center">
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid item xs={12} sm={12} md={12}>
           <FormatOption 
             selected={selectedFormat === 'pdf'}
             onClick={() => onFormatChange('pdf')}
@@ -98,60 +98,7 @@ function FormatSelection({ selectedFormat, onFormatChange }) {
             </Typography>
           </FormatOption>
         </Grid>
-        <Grid item xs={12} sm={6} md={6}>
-          <FormatOption 
-            selected={selectedFormat === 'html'}
-            onClick={() => onFormatChange('html')}
-            elevation={selectedFormat === 'html' ? 4 : 1}
-            role="button"
-            tabIndex={0}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                onFormatChange('html');
-              }
-            }}
-            aria-label="Select PDF to HTML format"
-          >
-            <Box sx={{ 
-              display: 'flex', 
-              alignItems: 'center', 
-              justifyContent: 'center', 
-              mb: { xs: 1, sm: 2 } 
-            }}>
-              <Box
-                sx={{
-                  width: { xs: 40, sm: 48 },
-                  height: { xs: 40, sm: 48 },
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: '#F76900',
-                  fontSize: { xs: '20px', sm: '24px' },
-                }}
-              >
-                &lt;/&gt;
-              </Box>
-            </Box>
-            <Typography 
-              variant="h6" 
-              component="div"
-              sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}
-            >
-              PDF to HTML
-            </Typography>
-            <Typography 
-              variant="body2" 
-              color="textSecondary" 
-              sx={{ 
-                mt: 1,
-                fontSize: { xs: '0.75rem', sm: '0.875rem' }
-              }}
-            >
-              Convert document to accessible HTML version
-            </Typography>
-          </FormatOption>
-        </Grid>
+        /* Deleted HTML To HTML format option for now, as per your request. */
       </Grid>
     </Box>
   );
