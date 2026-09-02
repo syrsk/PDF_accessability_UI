@@ -14,7 +14,7 @@ export const Bucket_Region = process.env.REACT_APP_BUCKET_REGION;
 
 // Separate buckets for different formats
 export const PDFBucket = process.env.REACT_APP_PDF_BUCKET_NAME || 'Null';
-export const HTMLBucket = process.env.REACT_APP_HTML_BUCKET_NAME || 'Null';
+//export const HTMLBucket = process.env.REACT_APP_HTML_BUCKET_NAME || 'Null';
 
 /**
  * Validate bucket configuration and return deployment status
@@ -22,7 +22,7 @@ export const HTMLBucket = process.env.REACT_APP_HTML_BUCKET_NAME || 'Null';
  */
 export const validateBucketConfiguration = () => {
   const pdfBucketConfigured = process.env.REACT_APP_PDF_BUCKET_NAME && process.env.REACT_APP_PDF_BUCKET_NAME !== 'Null';
-  const htmlBucketConfigured = process.env.REACT_APP_HTML_BUCKET_NAME && process.env.REACT_APP_HTML_BUCKET_NAME !== 'Null';
+  //const htmlBucketConfigured = process.env.REACT_APP_HTML_BUCKET_NAME && process.env.REACT_APP_HTML_BUCKET_NAME !== 'Null';
 
   const needsFullDeployment = !pdfBucketConfigured && !htmlBucketConfigured;
   const missingBuckets = [];
@@ -49,7 +49,7 @@ export const validateFormatBucket = (format) => {
   const isPdfFormat = format === 'pdf';
   const bucketConfigured = isPdfFormat
     ? (process.env.REACT_APP_PDF_BUCKET_NAME && process.env.REACT_APP_PDF_BUCKET_NAME !== 'Null')
-    : (process.env.REACT_APP_HTML_BUCKET_NAME && process.env.REACT_APP_HTML_BUCKET_NAME !== 'Null');
+    //: (process.env.REACT_APP_HTML_BUCKET_NAME && process.env.REACT_APP_HTML_BUCKET_NAME !== 'Null');
 
   return {
     isConfigured: bucketConfigured,
