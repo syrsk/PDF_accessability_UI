@@ -122,21 +122,12 @@ const LeftNav = ({ isCollapsed, setIsCollapsed, mobileOpen, setMobileOpen }) => 
             <Box display="flex" alignItems="center" marginBottom={2}>
               <SupportIcon fontSize="large" color="secondary" />
               <Typography variant="h6" fontWeight="bold" sx={{ marginLeft: 1 }}>
-                Support Resources
+                Questions and Support
               </Typography>
             </Box>
             <Divider sx={{ marginBottom: 2 }} />
             <Typography variant="body2" gutterBottom>
-              This solution is available open source and can be added to your AWS account for usage and testing.
-              Review documentation and access the GitHub repo at:
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-              <Link href="https://github.com/ASUCICREPO/PDF_Accessibility" target="_blank" rel="noopener noreferrer">
-                GitHub Repo
-              </Link>
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-              Have questions or need support? Email us: <strong>ai-cic@amazon.com</strong>
+              Contact ITS Digital Accessibility Services at accessibleIT@syr.edu or drop in to Digital Accessibility Office Hours.
             </Typography>
           </CardContent>
         </Card>
