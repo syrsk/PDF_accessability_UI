@@ -127,7 +127,7 @@ const LeftNav = ({ isCollapsed, setIsCollapsed, mobileOpen, setMobileOpen }) => 
             </Box>
             <Divider sx={{ marginBottom: 2 }} />
             <Typography variant="body2" gutterBottom>
-              Contact ITS Digital Accessibility Services at accessibleIT@syr.edu or drop in to Digital Accessibility Office Hours.
+              Contact ITS Digital Accessibility Services at <a href="mailto:accessibleIT@syr.edu">accessibleIT@syr.edu</a> or drop in to Digital Accessibility Office Hours.
             </Typography>
           </CardContent>
         </Card>
